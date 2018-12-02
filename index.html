@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+    
+</head>
+<body>
+    <div class="app">
+        <section class="tasks-wrap m-top">
+            <div class="container">
+                <div class="notification alert alert-warning my-alert">warning</div>
+                <div class="notification alert alert-success my-alert">success</div>
+                <div class="card">
+                    <div class="card-header">
+                        Create TODO task
+                    </div>
+                    <div class="card-body todo-view">
+                        <form name="form-todo">
+                            <div class="form-group">
+                                <label for="taskText">Enter your task</label>
+                                <input name="taskText" type="text" class="form-control" id="taskText">
+                                <div class="invalid-feedback">
+                                    Please enter some text
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">
+                                Add
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="card m-top m-bot">
+                    <div class="card-header">
+                        Task list
+                    </div>
+                    <div class="card-body task-view">
+                        <div class="alert alert-info empty-alert" style="display: block;">
+                            Empty
+                        </div>
+                        <ul class="list-group task-list">
+                            <!-- <li class="list-group-item d-flex align-items-center">
+                                <span>some text</span>
+                                <i class="fas fa-edit edit-item ml-auto"></i>
+                                <i class="fas fa-trash-alt delete-item ml-4"></i>
+                            </li>
+                            <li class="list-group-item d-flex align-items-center">
+                                <span contenteditable="true">editable text</span>
+                                <i class="fas fa-edit edit-item ml-auto fa-save"></i>
+                                <i class="fas fa-trash-alt delete-item ml-4"></i>
+                            </li> -->
+                        </ul>
+                    </div>
+                </div>
+                <button class="btn btn-primary clear-btn">
+                    Clear list
+                </button>
+            </div>
+        </section>
+    </div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

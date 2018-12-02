@@ -1,0 +1,21 @@
+.m-top {
+    margin-top: 50px;
+}
+
+.m-bot {
+    margin-bottom: 30px;
+}
+
+.my-alert{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    min-width: 400px;
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
